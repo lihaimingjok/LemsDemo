@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_height"
+    android:background="@color/colorPrimaryDark">
+    <RelativeLayout
+        android:id="@+id/rl_my_appinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/btn_com_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的应用"
+            android:textSize="16sp"
+            android:textColor="@color/main_white"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="靠得住体系产品"
+        android:textColor="@color/main_white"
+        android:textSize="@dimen/main_title_size"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_my_download"
+        android:layout_width="81dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_com_selector"
+        android:clickable="true"
+        android:paddingRight="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:text="我的下载"
+            android:textSize="16sp"
+            android:textColor="@color/main_white"/>
+        <LinearLayout
+            android:id="@+id/ll_my_download"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:background="@drawable/design_red_point"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            >
+            <TextView
+                android:id="@+id/tv_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:text=""/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

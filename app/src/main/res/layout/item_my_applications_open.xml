@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="93dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:padding="11dp">
+
+        <ImageView
+            android:id="@+id/iv_appinfo_icon"
+            android:layout_width="67dp"
+            android:layout_height="67dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/iv_appinfo_icon"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_appinfo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="体积计算"
+                android:textSize="15sp"
+                android:textColor="@color/txt_black"/>
+            <TextView
+                android:id="@+id/tv_appinfo_filesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_appinfo_name"
+                android:layout_marginTop="24dp"
+                android:text="占用空间：30.60MB"
+                android:textSize="11sp"
+                android:textColor="@color/txt_gray_shallow"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_offline_download"
+            android:layout_alignParentRight="true"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true">
+            <TextView
+                android:id="@+id/tv_open_app"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="打开"
+                android:gravity="center"
+                android:textColor="@color/common_blue_color"
+                android:background="@drawable/application_download_shape"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

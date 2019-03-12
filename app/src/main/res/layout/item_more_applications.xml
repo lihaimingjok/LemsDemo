@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="93dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:padding="11dp">
+
+        <ImageView
+            android:id="@+id/iv_appinfo_icon"
+            android:layout_width="67dp"
+            android:layout_height="67dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/iv_appinfo_icon"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:id="@+id/tv_appinfo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="体积计算"
+                android:textSize="15sp"
+                android:textColor="@color/txt_black"/>
+            <TextView
+                android:id="@+id/tv_appinfo_remark"
+                android:layout_below="@+id/tv_appinfo_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="通过输入灌入钢筋龙鸣参数，自动计算出主筋、螺旋筋的密度长度"
+                android:maxEms="13"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="12sp"
+                android:textColor="@color/txt_black"/>
+            <TextView
+                android:id="@+id/tv_appinfo_filesize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_appinfo_name"
+                android:layout_marginTop="34dp"
+                android:text="占用空间：30.60MB"
+                android:textSize="11sp"
+                android:textColor="@color/txt_gray_shallow"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_offline_download"
+            android:layout_alignParentRight="true"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true">
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/mProgress_horizontal_Circle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/application_download_shape"
+                android:max="100" />
+
+            <TextView
+                android:id="@+id/tv_download_click"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="下载"
+                android:textColor="@color/common_blue_color"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tv_pause_click"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="暂停"
+                android:textColor="@color/off_line_pause"
+                android:textSize="13sp"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/tv_install_apk"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="安装"
+                android:gravity="center"
+                android:textColor="@color/common_blue_color"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/tv_open_app"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="打开"
+                android:gravity="center"
+                android:textColor="@color/common_blue_color"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

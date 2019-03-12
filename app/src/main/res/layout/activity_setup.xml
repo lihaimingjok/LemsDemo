@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_titlebar_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_no_data"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_clear_ache"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/unacceptance_accept_item_height"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_listview_item"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+
+            android:paddingLeft="@dimen/unacceptance_accept_paddingLeft"
+            android:paddingRight="@dimen/unacceptance_accept_paddingRight">
+
+            <TextView
+                style="@style/Acceptance_item_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="@string/clear_ache" />
+
+            <TextView
+                android:id="@+id/tv_cache_size"
+                style="@style/Acceptance_childitem_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"/>
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/workbench_list_icon_jump" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_unaccept_accept"></View>
+
+        <LinearLayout
+            android:id="@+id/ll_changepassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/unacceptance_accept_item_height"
+            android:background="@drawable/selector_listview_item"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/unacceptance_accept_paddingLeft"
+            android:paddingRight="@dimen/unacceptance_accept_paddingRight">
+
+            <TextView
+                style="@style/Acceptance_item_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="@string/change_password" />
+
+            <TextView
+                style="@style/Acceptance_childitem_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/workbench_list_icon_jump" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/divider_unaccept_accept"></View>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/unacceptance_accept_item_height"
+            android:background="@drawable/selector_listview_item"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/unacceptance_accept_paddingLeft"
+            android:paddingRight="@dimen/unacceptance_accept_paddingRight">
+
+            <TextView
+                style="@style/Acceptance_item_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="@string/push" />
+
+            <TextView
+                style="@style/Acceptance_childitem_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right" />
+
+            <ImageView
+                android:id="@+id/iv_is_pull_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/my_open_btn" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_exit"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/feedback_commit_marginleft"
+            android:layout_marginRight="@dimen/feedback_commit_marginright"
+            android:layout_marginTop="@dimen/setup_commit_margintop"
+            android:background="@drawable/shape_button_login"
+            android:text="@string/exit"
+            android:textColor="@color/login_button_textcolor"
+            android:textSize="@dimen/login_button_textsize"/>
+    </LinearLayout>
+</LinearLayout>

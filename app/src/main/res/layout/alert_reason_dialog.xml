@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="215dp"
+    android:background="@drawable/shape_pickerview_dialog"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="确定是否删除该图片?"
+        android:textColor="@color/txt_black"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lightgrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <EditText
+            android:id="@+id/etReason"
+            android:layout_width="260dp"
+            android:layout_height="90dp"
+            android:background="@drawable/shape_et_person"
+            android:hint="请填写不通过理由（必填）"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:minLines="3"
+            android:inputType="textMultiLine"
+            android:gravity="left|top"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lightgrey" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cancel_inspect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_com_selector"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/titile_bar_textcolor"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/lightgrey" />
+
+        <TextView
+            android:id="@+id/confirm_inspect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_com_selector"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/titile_bar_textcolor"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_background_color"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_titlebar_application" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="65dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/change_ll_one"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            style="@style/change_textview_one"
+                            android:text="机器编号" />
+
+                        <EditText
+                            android:id="@+id/et_mechine_number"
+                            style="@style/change_edittext_one"
+                            android:hint="请输入机器编号" />
+                    </LinearLayout>
+
+                    <include layout="@layout/divider_1px" />
+
+                    <LinearLayout style="@style/change_ll_one">
+
+                        <TextView
+                            style="@style/change_textview_one"
+                            android:text="机器名称" />
+
+                        <EditText
+                            android:id="@+id/et_mechine_name"
+                            style="@style/change_edittext_one"
+                            android:hint="请输入机器名称" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        style="@style/change_ll_one"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            style="@style/change_textview_one"
+                            android:text="IP地址" />
+
+                        <EditText
+                            android:id="@+id/et_ip_address"
+                            style="@style/change_edittext_one"
+                            android:hint="请输入IP地址" />
+                    </LinearLayout>
+
+                    <include layout="@layout/divider_1px" />
+
+                    <LinearLayout style="@style/change_ll_one">
+
+                        <TextView
+                            style="@style/change_textview_one"
+                            android:text="端口" />
+
+                        <EditText
+                            android:id="@+id/et_port_number"
+                            style="@style/change_edittext_one"
+                            android:hint="请输入端口"
+                            android:maxLength="10"
+                            android:maxLines="1"
+                            android:inputType="number" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/change_ll_two"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            style="@style/change_textview_two"
+                            android:text="绑定设备" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_equipment_bind"
+                            style="@style/change_ll_three">
+
+                            <TextView
+                                android:id="@+id/tv_equipment_bind"
+                                style="@style/change_textview_three"
+                                android:text="请选择绑定的设备" />
+
+                            <ImageView
+                                android:id="@+id/iv_equipment_bind"
+                                style="@style/change_iv_down" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/divider_1px" />
+
+                    <LinearLayout style="@style/change_ll_two">
+
+                        <TextView
+                            style="@style/change_textview_two"
+                            android:text="类型" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_type"
+                            style="@style/change_ll_three">
+
+                            <TextView
+                                android:id="@+id/tv_type"
+                                style="@style/change_textview_three"
+                                android:text="请选择类型" />
+
+                            <ImageView
+                                android:id="@+id/iv_type"
+                                style="@style/change_iv_down" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/divider_1px" />
+
+                    <LinearLayout style="@style/change_ll_two">
+
+                        <TextView
+                            style="@style/change_textview_two"
+                            android:text="状态" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_status"
+                            style="@style/change_ll_three">
+
+                            <TextView
+                                android:id="@+id/tv_status"
+                                style="@style/change_textview_three"
+                                android:text="请选择状态" />
+
+                            <ImageView
+                                android:id="@+id/iv_status"
+                                style="@style/change_iv_down" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/change_ll_two"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            style="@style/change_textview_two"
+                            android:text="设备供应商" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_suppiler"
+                            style="@style/change_ll_three">
+
+                            <TextView
+                                android:id="@+id/tv_suppiler"
+                                style="@style/change_textview_three"
+                                android:text="请选择供应商" />
+
+                            <ImageView
+                                android:id="@+id/iv_suppiler"
+                                style="@style/change_iv_down" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/divider_1px" />
+
+                    <LinearLayout style="@style/change_ll_one">
+
+                        <TextView
+                            style="@style/change_textview_one"
+                            android:text="服务电话" />
+
+                        <EditText
+                            android:id="@+id/et_service_phone"
+                            style="@style/change_edittext_one"
+                            android:hint="请输入服务电话"
+                            android:inputType="phone"
+                            android:maxLength="11"
+                            android:maxLines="1" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_mechine_left"
+                    style="@style/change_button"
+                    android:text="取消" />
+
+                <TextView
+                    android:id="@+id/tv_mechine_right"
+                    style="@style/change_button"
+                    android:text="修改" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <include layout="@layout/layout_loading" />
+</RelativeLayout>

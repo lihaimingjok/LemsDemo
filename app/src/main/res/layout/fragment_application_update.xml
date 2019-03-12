@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_update_applications"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_update_application"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:divider="@color/divider_workbench_color"
+            android:dividerHeight="1px"
+            android:drawSelectorOnTop="true"
+            android:listSelector="@android:color/transparent"></ListView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:padding="10dp">
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/mProgress_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/application_download_shape"
+                android:max="100"
+                android:progress="30"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="应用更新"
+                    android:textSize="16sp"
+                    android:textColor="@color/off_line_pause"/>
+                <TextView
+                    android:id="@+id/tv_update_number_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/app_number_size"
+                    android:textSize="16sp"
+                    android:textColor="@color/off_line_pause"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <include layout="@layout/layout_no_data" />
+</LinearLayout>

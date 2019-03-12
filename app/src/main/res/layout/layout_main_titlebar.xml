@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_height"
+    android:background="@color/titile_bar_textcolor"
+    android:paddingLeft="@dimen/titlebar_padding_left"
+    android:paddingRight="@dimen/titlebar_padding_right">
+
+    <ImageView
+        android:id="@+id/iv_personcenter"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/home_nav_leftbar_icon_usre" />
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:maxLines="1"
+            android:text="工作台"
+            android:textColor="@color/main_white"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_proj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:maxLines="1"
+            android:text="@string/please_select_proj"
+            android:textColor="@color/main_white"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/iv_select_pro"
+            android:layout_width="14dp"
+            android:layout_height="9dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/home_toolbar_icon_drop_down" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_wifi_onff"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/home_toolbar_right_icon_wifi" />
+
+    <ImageView
+        android:id="@+id/iv_message"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/home_nav_leftbar_icon_massage"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_projrecords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="@string/message"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,554 @@
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+
+    <string name="app_name">靠得筑设备管理</string>
+
+    <!-- xlistview -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+
+    <string name="loading_view_click_to_refresh">点击屏幕,重新加载</string>
+    <string name="loading_view_no_data">暂无内容</string>
+    <string name="loading_view_loading">加载中...</string>
+    <string name="load_error_click_to_refresh">加载失败，点击重试</string>
+    <string name="network_error_click_to_refresh">无可用的网络，点击重试</string>
+    <string name="network_error">无用可用网络</string>
+    <string name="network_error_try_again">网络出错了，请稍后重试</string>
+    <string name="loading_error_try_again">加载失败，请稍后重试</string>
+
+    <string name="loading">加载中...</string>
+    <string name="loading_more">加载中...</string>
+    <string name="loading_no_more">已全部加载</string>
+    <string name="tip_load_data_error">对不起,无法加载数据.</string>
+
+
+    <!--应用环境-->
+    <string name="Environment">uat</string>
+    <!--应用环境对应的URL地址UAT-->
+    <string name="URLAccess">https://myd.crc.com.cn:7443/crc</string>
+
+    <!--应用更新对应的请求信息地址-->
+    <string name="URLAPPUpdate">https://app.crc.com.cn/MDM_SERVICE/appInfoDetail/getAppInfo</string>
+
+    <!--消息推送对应的地址-->
+    <string name="URLMessagePush">myd.crc.com.cn</string>
+    <!--消息推送对应地址的端口-->
+    <string name="PORTMessagePush">9000</string>
+
+    <!--身份认证的访问方法-->
+    <string name="MethodAuthentication">checkLDAPUser_v1</string>
+    <!--异常信息提交的访问方法-->
+    <string name="MethodExceptionReport">mLogService_v1</string>
+    <!--消息推送访问的方法-->
+    <string name="MethodMessagePush">deviceManager_v1</string>
+
+
+
+    <string name="theme_blue">经典蓝</string>
+    <string name="theme_pink">可爱粉</string>
+    <string name="theme_white">简约白</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">请输入手机号码</string>
+    <string name="prompt_password">请输入密码</string>
+    <string name="prompt_company_code">请输入集团编码</string>
+    <string name="action_sign_in">登录</string>
+    <string name="acceptance_commit">提交</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_please_input_username">请输入手机号码！</string>
+    <string name="error_please_input_rightusername">请输入正确的手机号码！</string>
+    <string name="error_please_input_password">请输入密码！</string>
+    <string name="please_input_code">请输入集团编码</string>
+    <string name="error_please_input_rightpassword">请输入6-16位数的密码！</string>
+    <string name="error_input_password_less_six">输入密码少于6位！</string>
+    <string name="error_invalid_password">密码错误！</string>
+    <string name="error_pwd_please_input_again">你输入的密码有误，请尝试重新输入</string>
+    <string name="login_qualitycheck_hotline_text">服务热线：</string>
+    <string name="login_qualitycheck_hotline_num">0755-82572006</string>
+    <string name="login_proto">登录即同意使用条款及隐私政策</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="desc_check_mark">check mark</string>
+
+
+    <string name="tab_workbench">工作台</string>
+    <string name="tab_acceptance">验收</string>
+    <string name="tab_realname_work">实名作业</string>
+    <string name="tab_equipment_protect">设备维保</string>
+    <string name="tab_work_control">作业监控</string>
+    <string name="tab_provincestatisticsforms">省统表</string>
+    <string name="tab_reportforms">统计报表</string>
+    <string name="tab_tools">工具</string>
+    <string name="tab_apps">应用</string>
+
+    <string name="qualitycheck">质检</string>
+    <string name="progress">进展</string>
+    <string name="tab_progress">进度</string>
+    <string name="tab_application">应用</string>
+
+    <!--fragment title-->
+    <string name="apply_check">我要报验</string>
+    <string name="check_record">报验记录</string>
+    <string name="acceptance_operation">验收操作</string>
+    <string name="offline_download">离线下载</string>
+    <string name="actual_mesure">实测实量</string>
+    <string name="one_house_archives">一户一档</string>
+    <!--workbench-->
+    <string name="unacceptance">未验收</string>
+    <string name="acceptance">已验收</string>
+    <string name="recheck">拟复验</string>
+    <string name="recheck_readrecord">查看记录</string>
+    <string name="acceptance_newcheck">新增检验批</string>
+    <string name="drawer_open">打开</string>
+    <string name="drawer_close">关闭</string>
+    <string name="unacceptance_accept_title">验收表</string>
+    <string name="proj_info">项目信息</string>
+    <string name="unaccept_accept_dpt">部位：</string>
+    <string name="unaccept_accept_procedure">工序：</string>
+    <string name="unaccept_accept_applytime">报验时间：</string>
+    <string name="unaccept_accept_applyperson">报验人员：</string>
+    <string name="construction_team">施工班组</string>
+    <string name="general_contracting">总承包</string>
+    <string name="specialized_contracting">专业承包</string>
+    <string name="acceptance_for_describing">验收批次描述</string>
+    <string name="acceptance_dominant_item">主控项目验收</string>
+    <string name="acceptance_common_item">一般项目验收</string>
+    <string name="acceptance_select_all">全选</string>
+    <string name="acceptance_key_qualified">一键合格</string>
+    <string name="acceptance_accept_result">验收结果</string>
+    <string name="acceptance_dominant">主控：</string>
+    <string name="acceptance_general">一般：</string>
+    <string name="acceptance_overall_result">总体结果：</string>
+    <string name="acceptance_accept_photo">验收图片</string>
+    <string name="error_get_unacceptance">请求未验收数据失败！</string>
+    <string name="please_select_proj">请选择项目</string>
+    <string name="error_add_batch">新增检验批失败!</string>
+    <string name="success_add_batch">新增检验批成功!</string>
+    <string name="acceptance_batch_num">批次：</string>
+    <string name="acceptance_qualifier">质检员：</string>
+    <string name="acceptance_supervisor">监理：</string>
+    <string name="accept_record">验收记录</string>
+    <string name="item_no_data">(无)</string>
+    <string name="acceptance_num">第</string>
+    <string name="acceptance_batch">批</string>
+
+
+    <!--toast提示语-->
+    <string name="login_no_regist">您输入的账号还未注册！</string>
+    <string name="login_pw_error">您输入的密码有误！</string>
+    <string name="login_failed">网络连接失败，请检查您的网络设置</string>
+    <string name="exit">退出</string>
+    <string name="unlogin_failed">退出失败</string>
+    <string name="get_user_operat_privileges_failed">获取权限信息失败！</string>
+    <string name="project_period">请求项目期数失败！</string>
+    <string name="request_weather_failed">天气请求失败！</string>
+    <string name="weather_city_name">深圳</string>
+    <string name="going_check_process">工序</string>
+    <string name="going_check_process_error">工序请求失败!</string>
+    <string name="going_check_regions_tree_error">位置信息请求失败！</string>
+    <string name="going_check_inspector_error">质检员信息请求失败！</string>
+    <string name="going_check_no_select_location">您还没有选择部位信息！</string>
+    <string name="going_check_no_select_process">您还没有选择工序信息！</string>
+    <string name="going_check_no_select_inspector">您还没有选择质检员！</string>
+    <string name="going_check_success">报验成功！</string>
+    <string name="going_check_failed">报验失败！</string>
+    <string name="please_enter_old_pw">请输入原密码！</string>
+    <string name="please_enter_old_pw_limit">请输入6-16位的原密码！</string>
+    <string name="please_enter_new_pw">请输入新密码！</string>
+    <string name="please_enter_new_pw_limit">请输入6-16位的新密码！</string>
+    <string name="feekback_content_no_null">请填写反馈内容！</string>
+    <string name="please_enter_again_new_pw">请再次输入新密码！</string>
+    <string name="two_times_different">两次新密码不一致！</string>
+    <string name="pw_correct_success">密码修改成功！</string>
+    <string name="pw_corret_failed">密码修改失败!</string>
+    <string name="change_portrait_success">头像修改成功！</string>
+    <string name="change_portrait_failed">头像修改失败！</string>
+    <string name="get_check_record_failed">获取报验记录失败！</string>
+    <string name="no_check_record_data">暂无报验记录</string>
+    <string name="get_house_chart_error">请求当前户型图数据失败</string>
+    <string name="get_acceptance_list_failed">获取验收列表失败！</string>
+    <string name="get_alias_empty">获取别名为空！</string>
+    <string name="please_feedback_content">请输入意见反馈内容！</string>
+    <string name="feedback_content_submit_error">意见内容提交失败！</string>
+    <string name="feedback_submit_success">意见提交成功！</string>
+    <!-- 验收 -->
+    <string name="success_commit_acceptance_images">提交区域验收数据成功！</string>
+    <string name="failed_commit_acceptance_images">提交区域验收数据失败！</string>
+    <string name="get_hide_photos_failed">获取该区域图片失败！</string>
+    <string name="delete_hide_photo_success">删除成功！</string>
+    <string name="delete_hide_photo_failed">删除失败！</string>
+    <string name="please_select_project_periods">请选择项目期数！</string>
+    <string name="off_line_download_list_failed">获取离线下载列表失败！</string>
+    <string name="no_off_line_list_data">暂无离线数据</string>
+    <string name="acceptance_notice">通知</string>
+    <string name="acceptance_jump">跳过</string>
+    <string name="no_data">暂无数据</string>
+    <string name="accept_record_failed">获取验收记录失败！</string>
+    <string name="please_check_network">网络不给力，请检查网络设置</string>
+    <string name="please_selectfrom_album">从手机相册选择</string>
+    <string name="please_selectquery">选择查询部位</string>
+    <string name="accept_record_batch_times">第%1$s批</string>
+    <string name="press_again_exit_app">再按一次退出程序</string>
+
+    <!--应用-->
+    <string name="no_applications_data">暂无应用</string>
+    <string name="no_download_applications">暂无正在下载的应用</string>
+    <string name="download_delete">删除</string>
+    <string name="my_downloads">我的下载</string>
+    <string name="delete_my_application_dialog">删除将删除本地下载文件\n是否确定要删除?</string>
+    <string name="my_applications">我的应用</string>
+    <string name="application_update">应用更新</string>
+    <string name="more_applications">更多应用</string>
+    <string name="no_install_applications">暂无打开应用</string>
+    <string name="no_update_applications">暂无更新应用</string>
+    <string name="app_number_size">(%1$d个应用，%2$.2fMB)</string>
+    <string name="please_select_house">您的操作有误，请选择到户</string>
+    <string name="no_task_list">暂无任务单列表</string>
+    <string name="task_proceduce_batch_number">%1$s (%2$s)</string>
+    <string name="task_no_notify_supervision">%1$s（未通知监理）</string>
+    <!-- 图片浏览 -->
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="finish">完成</string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="photo">选择相册</string>
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinish">完成</string>
+    <string name="camera_cancel">取消</string>
+    <string name="no_photo">相册没有图片</string>
+    <string name="unfinished">未完成</string>
+
+    <!--个人信息-->
+    <string name="person_message">个人信息</string>
+    <string name="commit">提交</string>
+    <string name="notify_supervisor">通知监理</string>
+    <string name="modify_task">修改任务单</string>
+    <string name="clear_ache">清理缓存</string>
+    <string name="change_password">修改密码</string>
+    <string name="push">推送</string>
+    <string name="setup">设置</string>
+    <string name="dialog_tv_title">温馨提示</string>
+    <string name="dialog_msg_title">本次更新内容：</string>
+    <string name="feedback">意见反馈</string>
+    <string name="about">关于</string>
+    <string name="changepassword">修改密码</string>
+    <string name="prepassword">原密码：</string>
+    <string name="newpassword">新密码：</string>
+    <string name="makesurepassword">再次确认密码：</string>
+    <string name="unacceptance_no_data">您暂时没有未验收数据</string>
+    <string name="acceptance_no_data">您暂时还没有验收记录</string>
+    <string name="reacceptance_no_data">您暂时没有复验数据</string>
+    <string name="no_proj_data">无项目数据!</string>
+    <string name="please_download_data">请下载离线数据!</string>
+
+    <string name="upload_hide_photo_title">上传隐蔽图片</string>
+    <string name="token_invalid">token无效</string>
+    <string name="timeout_pleaselogin">网络请求超时，请重新登录</string>
+    <string name="saasplatform">SaaS平台</string>i
+    <string name="projmanage">工程管理</string>
+    <string name="IntelliEnffi">智能高效</string>
+    <string name="provincestatisticsforms">省统表</string>
+    <string name="post_qulity_inspector">质检</string>
+    <string name="post_construction_team">班组</string>
+    <string name="post_supervisor">监理</string>
+    <string name="post_manager">经理</string>
+
+    <!--省统表-->
+    <string name="provstatforms_measurerecords">实测实量记录</string>
+    <string name="provstatforms_archivesofhouse">一户一档图片</string>
+    <string name="makesure">确定</string>
+    <string name="hiddenphoto">隐蔽图片</string>
+    <string name="provstatforms_selectitem">选择项目类型</string>
+    <string name="provstatforms_floor">楼板</string>
+    <string name="provstatforms_wall">墙体</string>
+    <string name="provstatforms_ceiling">顶棚</string>
+    <string name="provstatforms_photo">图纸</string>
+    <string name="measure_records">验收记录</string>
+    <string name="provstatforms_region">部位：</string>
+    <string name="provstatforms_notice">说明：</string>
+    <string name="provstatforms_records_num">代表验收记录条数</string>
+    <string name="provstatforms_all_ok">代表所有记录都合格</string>
+    <string name="provstatforms_part_failure">代表部分记录不合格</string>
+    <string name="provstatforms_procedure_records">验收工序记录</string>
+    <string name="provstatforms_procedure">工序</string>
+    <string name="provstatforms_batch">批次</string>
+    <string name="provstatforms_construction_team">班组</string>
+    <string name="provstatforms_qualifier_res">质检员验收结果</string>
+    <string name="provstatforms_qualifier_firstcheck">质检员首验</string>
+    <string name="provstatforms_qualifier_recheck">质检员复验</string>
+    <string name="provstatforms_qualifier">质检员</string>
+    <string name="provstatforms_time">时间</string>
+
+    <string name="provstatforms_supervisor_res">监理验收结果</string>
+    <string name="provstatforms_supervisor_firstcheck">监理员首验</string>
+    <string name="provstatforms_supervisor_recheck">监理员复验</string>
+    <string name="provstatforms_supervisor">监理</string>
+
+    <string name="provstatforms_firstpart_res">甲方</string>
+    <string name="provstatforms_firstpart_firstcheck">甲方抽查首验</string>
+    <string name="provstatforms_firstpart_recheck">甲方抽查复验</string>
+    <string name="provstatforms_firstpart">甲方人员</string>
+
+    <string name="provstatforms_generalcontract_res">总承包</string>
+    <string name="provstatforms_generalcontract_firstcheck">总承包抽查首验</string>
+    <string name="provstatforms_generalcontract_recheck">总承包抽查复验</string>
+    <string name="provstatforms_generalcontract">总承包人员</string>
+
+    <string name="provstatforms_orther_res">其他</string>
+    <string name="provstatforms_orther_firstcheck">其他抽查首验</string>
+    <string name="provstatforms_orther_recheck">其他抽查复验</string>
+    <string name="provstatforms_orther">其他人员</string>
+    <string name="provstatforms_acceptance_form">验收表</string>
+    <string name="provstatforms_acceptance_region">验收部位</string>
+    <string name="provstatforms_contracting_com">承包施工单位</string>
+    <string name="provstatforms_constructionteam_name">班组名称</string>
+    <string name="provstatforms_constructionteam_leader">班组负责人</string>
+    <string name="provstatforms_applyer">报验人</string>
+    <string name="provstatforms_ortherchecker">其他检查人员</string>
+    <string name="provstatforms_appletime">报验时间</string>
+    <string name="provstatforms_checktime">检查时间</string>
+    <string name="provstatforms_dominantitem">主控项目</string>
+
+    <!--验收-->
+    <string name="error_get_constructionteam">获取班组失败！</string>
+    <string name="error_get_contracting">获取承包商失败！</string>
+    <string name="select_constructionteam">班组</string>
+    <string name="error_commit_acceptance">提交验收数据失败！</string>
+    <string name="success_commit_acceptance">提交验收数据成功！</string>
+    <string name="success_uploadphoto">上传图片成功！</string>
+    <string name="error_uploadphoto">上传图片失败！</string>
+    <string name="uploading">正在上传</string>
+    <string name="selectgeneralcontract">总承包</string>
+    <string name="selectspecialcontract">专业承包</string>
+    <string name="acceptance_message_failed">获取验收批信息失败！</string>
+    <string name="measurerecord_selectquery">选择查询部位</string>
+    <string name="qualified">合格</string>
+    <string name="unqualified">不合格</string>
+    <string name="unqualified_zero">不合格</string>
+    <string name="offset_to">至</string>
+    <string name="error_commit_notity">数据已保存好，网络连接成功后自动提交，点击确定返回上一界面</string>
+    <string name="cancel">取消</string>
+    <string name="failure_commit">提交失败！</string>
+    <string name="nice_notify">温馨提示</string>
+    <string name="nice_notify_exitmsg">验收录入中，是否放弃本次录入数据？</string>
+    <string name="error_get_supervison">获取监理失败！</string>
+    <string name="please_select_supervison">请选择监理！</string>
+    <string name="success_notice_supervison">通知监理成功！</string>
+    <string name="error_notice_supervison">通知监理失败！</string>
+    <string name="please_constructionteam">请选择施工班组！</string>
+    <string name="please_generalcontracting">请选择总承包！</string>
+    <string name="please_special_contracting">请选择专业承包！</string>
+    <string name="please_picture">请拍照或选取图片！</string>
+    <string name="please_input_selectitem">请录入已选择的一般项目！</string>
+    <string name="no_dominantitem">无主控项目！</string>
+    <string name="no_generalitem">无一般项目！</string>
+    <string name="allow_offset">\> 允许偏差 (</string>
+    <string name="no_data_aboutsurvey">暂时没有可选监理</string>
+    <!--进度-->
+    <string name="progress_constructiondecoration">土建装修</string>
+    <string name="progress_mainacceptance">主体结构</string>
+    <string name="progress_decorationacceptance">装修验收</string>
+    <string name="progress_unacceptance">未验收</string>
+    <string name="progress_readprojrecords">查看项目实景</string>
+    <string name="progress_uploadprojrecords">上传项目实景</string>
+    <string name="progress_projrecords">项目实景</string>
+    <string name="progress_warning">警告</string>
+    <string name="doyoudeletethispic">是否确定删除此图片？</string>
+    <string name="progress_selectprocedure">选择查询工序</string>
+    <string name="progress_qualifier_acceptance">质检员已验</string>
+    <string name="progress_supervisor_acceptance">监理已验</string>
+    <string name="progress_quali_super_acceptance">质检员监理已验</string>
+    <string name="failure_acceptance">验收不合格</string>
+    <string name="progress_everyprodure">各工序验收进度</string>
+    <string name="please_select">请选择</string>
+    <string name="please_select_noticemulti">请选择(可多选)</string>
+    <string name="selected_label">已选择</string>
+    <string name="error_getscheduletree">获取项目验收进度失败！</string>
+    <string name="error_deletephoto">删除相片失败！</string>
+    <string name="success_deletephoto">删除相片成功！</string>
+    <string name="building">栋</string>
+    <string name="floor">层</string>
+    <string name="dontselectprocedure_overseven">选择工序不能超过7个!</string>
+    <string name="writed">已填写</string>
+    <string name="unwrite">未填写</string>
+    <string name="progress_roof">屋面层</string>
+    <string name="progress_procedure1">工序1</string>
+    <string name="progress_procedure2">工序2</string>
+    <string name="select_proj">选择项目</string>
+
+    <!--离线-->
+    <string name="networkstate">networkstate</string>
+    <string name="networkstate1">networkstate</string>
+    <string name="networkstate2">networkstate</string>
+    <string name="networkstate3">networkstate</string>
+    <string name="networkstate4">networkstate</string>
+    <string name="networkstate5">networkstate</string>
+    <string name="networkstate_on">networkstate_on</string>
+    <string name="networkstate_off">networkstate_off</string>
+    <string name="period_list">期列表</string>
+    <string name="offline_qt">墙体</string>
+    <string name="offline_lb">楼板</string>
+    <string name="offline_dp">顶棚</string>
+    <string name="offline_housechart">户型图</string>
+    <string name="offline_success_acceptance">离线验收成功！</string>
+    <string name="current_offline_state">目前处于离线状态！</string>
+    <string name="offline_thisperiod">本期</string>
+    <string name="offline_thisbuild">本栋</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="offline_nodata_upload">暂无离线数据上传！</string>
+
+    <!--优化-->
+    <string name="upload_offline_data_success">上传离线数据成功！</string>
+    <string name="no_offline_data_upload">无离线数据上传</string>
+    <string name="current_be_in_offline_state">您当前处于离线状态！</string>
+    <string name="get_application_list_failed">应用列表获取失败！</string>
+    <string name="request_project_period_failed">请求项目期数失败！</string>
+    <string name="request_modify_task_failed">获取任务单列表失败</string>
+    <string name="submit_photo_dialog">您未更新图片，是否需要\n更新图片？</string>
+    <string name="upload_hide_failure_again_upload">照片提交失败，请重新上传！</string>
+
+    <!--统计-->
+    <string name="statistics">统计</string>
+    <string name="statics">统计报表</string>
+    <string name="every_project_rate_situation">各项目合格率情况</string>
+    <string name="ranking_title">各项目合格率排行榜</string>
+    <string name="ranking_contract_title">各班组合格率排行榜</string>
+    <string name="statistics_billboard">榜单</string>
+    <string name="select_type">选择类别</string>
+    <string name="select_project">选择项目</string>
+    <string name="select_date">选择日期</string>
+    <string name="request_postinfo_failed">获取岗位列表失败！</string>
+    <string name="request_failed">请求失败！</string>
+    <string name="version_unknown">未知版本</string>
+    <string name="login_logo_desc">专业建筑行业服务商</string>
+    <string name="ourself_company">深圳市鹏建互联科技股份有限公司</string>
+    <string name="guide_title_01">靠得筑</string>
+    <string name="guide_title_02">实测实量</string>
+    <string name="guide_title_03">一户一档</string>
+    <string name="guide_title_04">项目进度</string>
+    <string name="guide_title_05">报表统计</string>
+    <string name="guide_small_title_01">建筑行业质量验收平台</string>
+    <string name="guide_small_title_02">严格执行质量验收标准</string>
+    <string name="guide_small_title_03">提升建筑质量管理能力</string>
+    <string name="guide_small_title_04">准确把握项目验收质量进度</string>
+    <string name="guide_small_title_05">提升企业实时管控效率</string>
+    <string name="denied_permission">您拒绝授权,会导致应用的某些功能无法正常使用，可以在系统设置中重新开启权限</string>
+    <string name="selector_no_data">暂无数据</string>
+    <string name="close_push_cannot_receive_message">关闭后，手机将不会接受消息通知。</string>
+    <string name="close_push_cancel">取消</string>
+    <string name="close_push_confirm_close">确认关闭</string>
+    <string name="no_inspector_list_data">暂无报验员统计数据</string>
+    <string name="selected_number">已选%1$s个</string>
+
+
+    <!--大型设备项目 start-->
+    <!--workrealname-->
+    <string name="project_situation">项目概况</string>
+    <string name="equipment_manage">设备管理</string>
+    <string name="person_information">人员信息</string>
+    <string name="message">消息</string>
+    <string name="special_person_info">特种人员信息</string>
+    <string name="person_info_change">修改</string>
+    <string name="work_machine">考勤机</string>
+    <string name="large_equipment">大型设备</string>
+    <string name="operate_record">操作记录</string>
+    <string name="add_workmechine_and_equipment">新增</string>
+    <string name="more_record">更多</string>
+
+    <string name="person_manage_table">人员管理</string>
+    <string name="person_check_table">人员审核</string>
+    <string name="modify_person_list">修改操作人员</string>
+    <string name="modify_person_finish">完成</string>
+    <string name="add_equipment_info">新增大型设备</string>
+    <string name="modify_large_equipment">修改大型设备</string>
+    <string name="entering_equipment_info">设备信息录入</string>
+    <string name="equipment_info">设备信息</string>
+    <string name="work_mechine_no_data">暂无考勤机内容</string>
+    <string name="large_equipment_no_data">暂无大型设备内容</string>
+    <string name="operate_record_no_data">暂无操作记录</string>
+    <string name="operate_record_today_no_data">暂无今日的操作记录</string>
+    <string name="person_list_no_data">无联系人列表</string>
+    <string name="device_run_statics">设备运行统计</string>
+    <string name="operate_time">%1$s\n%2$s</string>
+    <string name="number_tower_crane">%1$s个塔吊起重机</string>
+    <string name="number_elevator">%1$s个施工升降机</string>
+
+    <string name="select_bind_equipment">选择绑定的设备</string>
+    <string name="select_equipment">请选择设备</string>
+    <string name="select_type2">选择类型</string>
+    <string name="select_status">选择状态</string>
+    <string name="select_supplier">选择供应商</string>
+    <string name="please_entering_device_number">请输入机器编号</string>
+    <string name="please_entering_device_name">请输入机器名称</string>
+    <string name="please_entering_device_ip">请输入IP地址</string>
+    <string name="please_entering_correct_ip">请输入正确的IP地址</string>
+    <string name="please_entering_device_port">请输入端口</string>
+    <string name="please_entering_correct_port">请输入正确的端口号</string>
+    <string name="please_select_bind_equipment">请选择绑定的设备</string>
+    <string name="please_select_type">请选择类型</string>
+    <string name="please_select_status">请选择状态</string>
+    <string name="please_select_supplier">请选择设备供应商</string>
+    <string name="please_entering_phone">请输入服务电话</string>
+    <string name="select_device_type">选择设备类型</string>
+    <string name="please_entering_equipment_number">请输入设备编号</string>
+    <string name="please_entering_equipment_name">请输入设备名称</string>
+    <string name="please_select_equipment_type">请选择设备</string>
+    <string name="please_entering_order">请输入序列号</string>
+    <string name="please_entering_job_number">请输入工号</string>
+    <string name="please_entering_name">请输入姓名</string>
+    <string name="please_selet_device">请选择设备</string>
+    <string name="operate_persons">操作人员（%1$s）人</string>
+
+    <!--Toast Tips-->
+
+    <string name="person_type" >特种作业人员</string>
+    <string name="person_work_num" >请输入工号</string>
+    <string name="person_name_tip" >请输入姓名</string>
+    <string name="person_name_err" >请输入正确的姓名</string>
+    <string name="person_sex_tip" >请选择性别</string>
+    <string name="person_type_tip" >请选择人员类别</string>
+    <string name="person_phone" >请输入手机号码</string>
+    <string name="person_realpic_tip" >请上传真实头像</string>
+    <string name="person_idno_tip" >请输入身份证号</string>
+    <string name="person_idno_err" >身份证号不正确</string>
+    <string name="person_idenddate_tip" >请输入身份证有效期起始时间</string>
+    <string name="person_idendtime_tip" >请输入身份证有效期截止时间</string>
+    <string name="person_idaddr_tip" >请输入身份证地址</string>
+    <string name="person_idsign_tip" >请输入签发机关</string>
+    <string name="person_idfpic_tip" >请上传身份证正面</string>
+    <string name="person_idopic_tip" >请上传身份证反面</string>
+    <string name="add_person_success" >新增人员成功</string>
+    <string name="add_person_fail" >新增人员失败</string>
+    <string name="mod_person_fail" >提交失败</string>
+    <string name="mod_person_success" >修改成功</string>
+    <string name="check_person_success" >审核成功</string>
+    <string name="reason_person_fail">请输入原因</string>
+    <string name="person_no_data">暂无人员信息</string>
+    <string name="person_special_id">请选择特种工种</string>
+    <string name="person_special_date">请输入岗位证书有效期</string>
+    <string name="person_special_no">请输入岗位证书编号</string>
+    <string name="person_special_pic">请上传岗位证书照片</string>
+    <string name="date_error">身份证有效期格式有误</string>
+    <string name="special_date_error">特种证书有效期格式有误</string>
+    <string name="person_no_img">暂无图片</string>
+
+    <string name="more_records">更多记录</string>
+    <string name="equipment_working_sta">设备运行统计</string>
+    <string name="working_more">更多</string>
+    <string name="alphabet_and_number">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</string>
+    <string name="no_bind_work_mechine">请先绑定考勤机！</string>
+    <string name="list_pull_down_end">没有更多内容了</string>
+</resources>

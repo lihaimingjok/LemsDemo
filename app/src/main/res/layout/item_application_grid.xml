@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_appinfo_icon"
+        android:layout_width="67dp"
+        android:layout_height="67dp" />
+
+    <TextView
+        android:id="@+id/tv_appinfo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="建筑土建施工技术规范"
+        android:singleLine="true"
+        android:maxEms="5"
+        android:ellipsize="end"
+        android:textColor="@color/txt_black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_appinfo_filesize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text=""
+        android:textSize="11sp"
+        android:textColor="@color/txt_gray_shallow" />
+
+    <RelativeLayout
+        android:id="@+id/rl_offline_download"
+        android:layout_width="55dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="11dp">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/mProgress_horizontal_Circle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/application_download_shape"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/tv_download_click"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="下载"
+            android:textColor="@color/common_blue_color"/>
+
+        <TextView
+            android:id="@+id/tv_pause_click"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="暂停"
+            android:textColor="@color/off_line_pause"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/tv_install_apk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="安装"
+            android:gravity="center"
+            android:textColor="@color/common_blue_color"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tv_open_app"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="打开"
+            android:gravity="center"
+            android:textColor="@color/common_blue_color"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

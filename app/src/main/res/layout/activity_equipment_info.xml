@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/common_background_color"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true">
+
+        <include layout="@layout/layout_titlebar_application" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="65dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_equipment_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center_vertical"
+                        android:text="设备信息"
+                        android:textColor="@color/txt_gray_shallow"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_equipment_top"
+                        style="@style/change_ll_one">
+
+                        <TextView
+                            style="@style/change_textview_one"
+                            android:text="设备编号" />
+
+                        <EditText
+                            android:id="@+id/et_equipment_number"
+                            style="@style/change_edittext_one"
+                            android:hint="请输入设备编号" />
+                    </LinearLayout>
+
+                    <include layout="@layout/divider_1px" />
+
+                    <LinearLayout style="@style/change_ll_one">
+
+                        <TextView
+                            style="@style/change_textview_one"
+                            android:text="设备名称" />
+
+                        <EditText
+                            android:id="@+id/et_equipment_name"
+                            style="@style/change_edittext_one"
+                            android:hint="请输入设备名称" />
+                    </LinearLayout>
+
+                    <include layout="@layout/divider_1px" />
+
+                    <LinearLayout
+                        style="@style/change_ll_two">
+
+                        <TextView
+                            style="@style/change_textview_two"
+                            android:text="设备类型" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_equipment_type"
+                            style="@style/change_ll_three">
+
+                            <TextView
+                                android:id="@+id/tv_equipment_type"
+                                style="@style/change_textview_three"
+                                android:text="请选择设备类型" />
+
+                            <ImageView
+                                android:id="@+id/iv_equipment_type"
+                                style="@style/change_iv_down" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/divider_1px" />
+
+                    <LinearLayout style="@style/change_ll_one">
+
+                        <TextView
+                            style="@style/change_textview_one"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="设备序列号" />
+
+                        <EditText
+                            android:id="@+id/et_order_number"
+                            style="@style/change_edittext_one"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:digits="@string/alphabet_and_number"
+                            android:hint="请输入序列号" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_status"
+                        style="@style/change_ll_two"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            style="@style/change_textview_two"
+                            android:text="状态" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_equipment_status"
+                            style="@style/change_ll_three">
+
+                            <TextView
+                                android:id="@+id/tv_equipment_status"
+                                style="@style/change_textview_three"
+                                android:text="启用中" />
+
+                            <ImageView
+                                android:id="@+id/iv_equipment_status"
+                                style="@style/change_iv_down" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/txt_gray_divider">
+
+                    </View>
+
+                    <LinearLayout
+                        android:id="@+id/ll_phone"
+                        style="@style/change_ll_one">
+
+                        <TextView
+                            style="@style/change_textview_one"
+                            android:text="服务电话" />
+
+                        <EditText
+                            android:id="@+id/et_service_phone"
+                            style="@style/change_edittext_one"
+                            android:hint="请输入服务电话"
+                            android:inputType="phone"
+                            android:maxLength="11"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <include layout="@layout/divider_1px" />
+
+                    <LinearLayout style="@style/change_ll_one">
+
+                        <TextView
+                            style="@style/change_textview_one"
+                            android:text="备注" />
+
+                        <EditText
+                            android:id="@+id/et_remark"
+                            style="@style/change_edittext_one"
+                            android:hint="请输入备注(选填)" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_operate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_operate_persons"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="15dp"
+                            android:text="操作人员（0人）"
+                            android:textColor="@color/txt_gray_shallow"
+                            android:textSize="13sp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerview_horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_operate_persons"
+                            android:layout_centerVertical="true"
+                            android:background="@color/white"
+                            android:scrollbars="none" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_equipment_left"
+                    style="@style/change_button"
+                    android:text="取消" />
+
+                <TextView
+                    android:id="@+id/tv_equipment_right"
+                    style="@style/change_button"
+                    android:text="修改" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <include layout="@layout/layout_loading" />
+</RelativeLayout>

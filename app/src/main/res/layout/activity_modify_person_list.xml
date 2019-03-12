@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_titlebar_application" />
+
+    <LinearLayout
+        android:id="@+id/ll_search_person"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true" />
+
+        <EditText
+            android:id="@+id/et_search_person1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@null"
+            android:hint="搜索"
+            android:textSize="13sp"
+            android:paddingLeft="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <HorizontalScrollView
+            android:id="@+id/hsv_include"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+
+            <LinearLayout
+                android:id="@+id/ll_include"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <EditText
+            android:id="@+id/et_search_person"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@null"
+            android:hint="搜索"
+            android:paddingLeft="8dp"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="添加"/>
+
+    <Button
+        android:id="@+id/bt_minus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="减少"/>
+</LinearLayout>

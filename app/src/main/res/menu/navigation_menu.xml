@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/action_modify_task"
+        android:title="修改任务单"
+        android:orderInCategory="100"
+        android:icon="@drawable/my_leftbar_icon_modify_task"
+        />
+    <item
+        android:id="@+id/action_settings"
+        android:title="设置"
+        android:orderInCategory="100"
+        android:icon="@drawable/leftbar_icon_set_up"
+        />
+    <item
+        android:id="@+id/action_feedback"
+        android:title="意见反馈"
+        android:orderInCategory="100"
+        android:icon="@drawable/my_leftbar_icon_feedback"
+        />
+    <item
+        android:id="@+id/action_update"
+        android:title="检查更新"
+        android:orderInCategory="100"
+        android:icon="@drawable/my_leftbar_icon_check_update"
+        />
+    <item
+        android:id="@+id/action_about"
+        android:title="关于"
+        android:orderInCategory="100"
+        android:icon="@drawable/my_leftbar_icon_about"
+        />
+</menu>

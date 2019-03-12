@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_main_titlebar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tl_title"
+            style="@style/TitleTab"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            app:tabMinWidth="400dp"
+            app:tabMaxWidth="400dp"
+            app:tabTextAppearance="@style/TabLayoutTextStyle" />
+        <TextView
+            android:id="@+id/tvRedTips"
+            android:layout_width="7.5dp"
+            android:layout_height="7.5dp"
+            android:background="@drawable/shape_red_tip"
+            android:layout_alignRight="@+id/tl_title"
+            android:layout_alignEnd="@+id/tl_title"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="12dp"
+            android:visibility="visible"
+            />
+    </RelativeLayout>
+
+
+
+    <include layout="@layout/divider_1px" />
+
+    <com.pcjz.lems.business.common.view.MyViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <include layout="@layout/layout_weather"/>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_titlebar_back"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_no_data">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/feedback_edittext_height"
+                android:layout_marginTop="@dimen/feedback_edittext_margintop"
+                android:gravity="top"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/txt_gray"
+                android:textSize="14sp"
+                android:textCursorDrawable="@drawable/color_cursor"
+                android:hint="请输入您的意见"
+                android:textColorHint="@color/txt_gray_shallow"
+                android:background="@color/white"/>
+            <Button
+                android:id="@+id/bt_commit"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_button_login"
+                android:textColor="@color/login_button_textcolor"
+                android:textSize="@dimen/login_button_textsize"
+                android:layout_marginTop="@dimen/feebback_commit_margintop"
+                android:layout_marginLeft="@dimen/feedback_commit_marginleft"
+                android:layout_marginRight="@dimen/feedback_commit_marginright"
+                android:text="@string/commit"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

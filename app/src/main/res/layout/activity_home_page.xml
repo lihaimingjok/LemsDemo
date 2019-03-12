@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dl_homepage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 内容部分 -->
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_home_page"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--<include layout="@layout/layout_main_titlebar"></include>-->
+            <com.pcjz.lems.business.common.view.MyViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"></com.pcjz.lems.business.common.view.MyViewPager>
+
+            <include layout="@layout/divider_1px" />
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
+                style="@style/CustomTab"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                app:tabGravity="fill"
+                app:tabIndicatorHeight="0dp"
+                app:tabMinWidth="400dp"
+                app:tabMaxWidth="400dp"
+                app:tabMode="fixed"></android.support.design.widget.TabLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <!-- 菜单部分 -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu" />
+
+</android.support.v4.widget.DrawerLayout>

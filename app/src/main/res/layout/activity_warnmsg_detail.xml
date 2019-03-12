@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+    <include layout="@layout/layout_titlebar_back" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:layout_marginTop="50dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_warnmsg_detail"
+
+            >
+
+
+            <TextView
+                android:id="@+id/tvDevName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:text="预警设备："
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvDevContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvDevName"
+                android:layout_alignStart="@+id/tvDevName"
+                android:layout_below="@+id/tvDevName"
+                android:layout_marginTop="7dp"
+                android:text="预警内容："
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <!--<TextView
+                android:id="@+id/tvDevPart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvDevContent"
+                android:layout_alignStart="@+id/tvDevContent"
+                android:layout_below="@+id/tvDevContent"
+                android:layout_marginTop="8dp"
+                android:text="预警部位：A栋12层"
+                android:textColor="#333333"
+                android:textSize="15sp" />-->
+
+            <TextView
+                android:id="@+id/tvWarnTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvDevContent"
+                android:layout_alignStart="@+id/tvDevContent"
+                android:layout_below="@+id/tvDevContent"
+                android:layout_marginTop="21dp"
+                android:text="发送预警时间："
+                android:textColor="#333333"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

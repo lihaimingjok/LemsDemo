@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/person_info_height"
+	android:background="@drawable/my_leftbar_bg">
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:gravity="center"
+		android:orientation="vertical">
+		<com.pcjz.lems.business.common.view.CircleImageView
+			android:id="@+id/iv_head_portrait"
+			android:layout_width="100dp"
+			android:layout_height="100dp"
+			android:src="@drawable/my_leftbar_pho_header"
+			></com.pcjz.lems.business.common.view.CircleImageView>
+		<TextView
+			android:id="@+id/tv_person_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/header_marginbottom"
+			android:textSize="15sp"
+			android:text="叶真宇"
+			android:textColor="@color/white"
+			/>
+	</LinearLayout>
+</RelativeLayout>

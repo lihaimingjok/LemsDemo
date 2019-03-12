@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="251dp"
+    android:layout_height="175dp"
+    android:background="@drawable/shape_pickerview_dialog"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="温馨提示"
+        android:textSize="16sp"
+        android:textColor="@color/txt_black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lightgrey" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="@string/delete_my_application_dialog"
+        android:textSize="15sp"
+        android:textColor="@color/txt_gray"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/lightgrey" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/cancel_inspect"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="取消"
+            android:textSize="15sp"
+            android:textColor="@color/titile_bar_textcolor"
+            android:background="@drawable/btn_com_selector"
+            android:gravity="center"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/lightgrey" />
+        <TextView
+            android:id="@+id/confirm_inspect"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="确定"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textColor="@color/titile_bar_textcolor"
+            android:background="@drawable/btn_com_selector"/>
+    </LinearLayout>
+</LinearLayout>
